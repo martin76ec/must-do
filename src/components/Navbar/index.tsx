@@ -1,19 +1,15 @@
-import { HomeIcon, MagnifyingGlassIcon, ColorWheelIcon } from "@radix-ui/react-icons";
+import { RiApps2Fill } from "react-icons/ri";
+import { RiCalendar2Line } from "react-icons/ri";
+import { RiBriefcase2Line } from "react-icons/ri";
+import { RiUser3Line } from "react-icons/ri";
 
 function Navbar() {
   return (
-    <div className='absolute w-full flex justify-center bottom-4'>
-      <div className='bg-[#E90064] h-16 rounded-xl w-[90%] lg:w-full lg:rounded-none grid grid-cols-3 overflow-hidden'>
-        <div className='flex items-center justify-center hover:bg-[#FF5F9E] text-5xl text-white'>
-          <HomeIcon />
-        </div>
-        <div className='flex items-center justify-center hover:bg-[#FF5F9E] text-5xl text-white'>
-          <MagnifyingGlassIcon />
-        </div>
-        <div className='flex items-center justify-center hover:bg-[#FF5F9E] text-5xl text-white'>
-          <ColorWheelIcon />
-        </div>
-      </div>
+    <div className='w-full h-24 text-gray-300 absolute bottom-0 flex items-center justify-center text-2xl  gap-20'>
+      <RiApps2Fill className='text-amber-400' />
+      <RiCalendar2Line />
+      <RiBriefcase2Line />
+      <RiUser3Line />
     </div>
   );
 }
